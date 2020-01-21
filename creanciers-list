@@ -1,0 +1,172 @@
+[
+  {
+    "categoryLabel": "RECHARGES",
+    "categoryCode": 200,
+    "creancierList": [
+      {
+        "codeCreancier": "1003",
+        "descriptionCreancier": "Orange",
+        "creances": [
+          {
+            "nomCreance": "Orange recharge Sim",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_meditel.png",
+        "nomCreancier": "Orange recharges",
+        "params": null,
+        "siteWeb": "http://www.orange.ma/"
+      },
+      {
+        "codeCreancier": "1001",
+        "descriptionCreancier": null,
+        "creances": [
+          {
+            "nomCreance": "Téléphonie et internet Sim",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_iam_p.png",
+        "nomCreancier": "IAM Recharges",
+        "params": null,
+        "siteWeb": "http://www.iam.ma"
+      },
+      {
+        "codeCreancier": "1013",
+        "descriptionCreancier": null,
+        "creances": [
+          {
+            "nomCreance": "Téléphonie et internet Sim",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_inwi_p.png",
+        "nomCreancier": "inwi Recharges",
+        "params": null,
+        "siteWeb": "http://www.inwi.ma"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "TÉLÉPHONIE ET INTERNET",
+    "categoryCode": 101,
+    "creancierList": [
+      {
+        "codeCreancier": "1004",
+        "descriptionCreancier": "Orange",
+        "creances": [
+          {
+            "nomCreance": "Orange Particuliers Sim",
+            "codeCreance": "01"
+          },
+          {
+            "nomCreance": "Orange Entreprises Sim",
+            "codeCreance": "02"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_meditel.png",
+        "nomCreancier": "Orange factures",
+        "params": null,
+        "siteWeb": "http://www.orange.ma/"
+      },
+      {
+        "codeCreancier": "1002",
+        "descriptionCreancier": "Paiement des factures Fixe, Mobile et Internet de IAM",
+        "creances": [
+          {
+            "nomCreance": "Produit Internet Sim",
+            "codeCreance": "03"
+          },
+          {
+            "nomCreance": "Produit Fixe Sim",
+            "codeCreance": "01"
+          },
+          {
+            "nomCreance": "Produit Mobile Sim",
+            "codeCreance": "02"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_iam_p.png",
+        "nomCreancier": "IAM Factures",
+        "params": null,
+        "siteWeb": "http://www.iam.ma"
+      },
+      {
+        "codeCreancier": "1018",
+        "descriptionCreancier": null,
+        "creances": [
+          {
+            "nomCreance": "Téléphonie et internet Sim",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_inwi_p.png",
+        "nomCreancier": "inwi Factures",
+        "params": null,
+        "siteWeb": "http://www.inwi.ma"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "EAU ET ÉLECTRICITÉ",
+    "categoryCode": 102,
+    "creancierList": [
+      {
+        "codeCreancier": "1007",
+        "descriptionCreancier": null,
+        "creances": [
+          {
+            "nomCreance": "Factures Redal",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_redal_p.jpg",
+        "nomCreancier": "Redal",
+        "params": null,
+        "siteWeb": "http://www.redal.ma"
+      },
+      {
+        "codeCreancier": "1005",
+        "descriptionCreancier": "Distribution d'eau et d'électricité. Services d'assainisement. Maintenance de l'éclairage public de Casablanca. Certification ISO 9001/2000 (2005).",
+        "creances": [
+          {
+            "nomCreance": "Paiement par N° de facture",
+            "codeCreance": "03"
+          },
+          {
+            "nomCreance": "Paiement par Référence",
+            "codeCreance": "01"
+          },
+          {
+            "nomCreance": "Paiement par N° de Contrat",
+            "codeCreance": "02"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_lydec_p.gif",
+        "nomCreancier": "LYDEC",
+        "params": null,
+        "siteWeb": "http://www.lydec.ma/"
+      }
+    ]
+  },
+  {
+    "categoryLabel": "IMPÔTS, TAXES ET FRAIS PORTUAIRES",
+    "categoryCode": 105,
+    "creancierList": [
+      {
+        "codeCreancier": "1025",
+        "descriptionCreancier": null,
+        "creances": [
+          {
+            "nomCreance": "DGI IR IS TVA DE et FI*",
+            "codeCreance": "01"
+          }
+        ],
+        "logoPath": "https://www.fatourati.ma/upload/logos/logo_dgi.png",
+        "nomCreancier": "DGI IR IS TVA DE et FI",
+        "params": null,
+        "siteWeb": "http://www.tax.gov.ma"
+      }
+    ]
+  }
+]
