@@ -1,5 +1,5 @@
 {
-  "creanciers?type=all":[
+  "creanciers":[
   {
     "categoryLabel": "RECHARGES",
     "categoryCode": 200,
@@ -171,7 +171,7 @@
     ]
   }
 ],
-"creanciers?type=invoice":[
+"invoices":[
   {
     "categoryLabel": "TÉLÉPHONIE ET INTERNET",
     "categoryCode": 101,
