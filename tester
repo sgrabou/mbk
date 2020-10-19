@@ -1,0 +1,103 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'getNumDraws' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts INTEGER year as parameter.
+     */
+    class ResponseWs{
+        int page;
+        int per_page;
+        int total;
+        int total_pages;
+
+        public int getPage() {
+            return page;
+        }
+
+        public void setPage(int page) {
+            this.page = page;
+        }
+
+        public int getPer_page() {
+            return per_page;
+        }
+
+        public void setPer_page(int per_page) {
+            this.per_page = per_page;
+        }
+
+        public int getTotal() {
+            return total;
+        }
+
+        public void setTotal(int total) {
+            this.total = total;
+        }
+
+        public int getTotal_pages() {
+            return total_pages;
+        }
+
+        public void setTotal_pages(int total_pages) {
+            this.total_pages = total_pages;
+        }
+    }
+    public static int getNumDraws(int year) {
+
+        int page =1;
+        int score =1;
+        
+        String urlWs ="http://jsonmock.hackerrank.com/api/football_matches?year="+year+"&page="+page+"&team1goals="+score+"&team2goals="+score;
+
+               try {
+
+            URL url = new URL(urlWs);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            conn.setRequestProperty("Accept", "application/json");
+
+            if (conn.getResponseCode() != 200) {
+                throw new RuntimeException("Failed : HTTP error code : "
+                        + conn.getResponseCode());
+            }
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(
+                    (conn.getInputStream())));
+
+            String output;
+            System.out.println("Output from Server .... \n");
+            while ((output = br.readLine()) != null) {
+                System.out.println(output);
+            }
+
+            conn.disconnect();
+
+        } catch (MalformedURLException e) {
+
+            e.printStackTrace();
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }
+
+}
+
+public class Solution {
