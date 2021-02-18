@@ -1,0 +1,23 @@
+
+    def rfProcess = rfProcessBuilder.start()
+
+    rfProcess.consumeProcessOutput(sout, serr)
+
+    def exitCode
+    try {
+        while (true) {
+            serr.eachLine { line, count ->
+                debug "$line"
+                serr.setLength(0)
+            }
+            sout.eachLine { line, count ->
+                debug "$line"
+                sout.setLength(0)
+            }
+            if (!rfProcess.isAlive()) {
+                break
+            }
+            rfProcess.waitFor(5, TimeUnit.SECONDS)
+        }
+        exitCode = rfProcess.waitFor()
+    }
